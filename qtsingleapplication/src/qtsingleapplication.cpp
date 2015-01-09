@@ -168,19 +168,6 @@ QtSingleApplication::QtSingleApplication(const QString &appId, int &argc, char *
     sysInit(appId);
 }
 
-
-/*!
-    Creates a QtSingleApplication object. The application identifier
-    will be QCoreApplication::applicationFilePath(). \a argc, \a
-    argv, and \a type are passed on to the QAppliation constructor.
-*/
-QtSingleApplication::QtSingleApplication(int &argc, char **argv, Type type)
-    : QApplication(argc, argv, type)
-{
-    sysInit();
-}
-
-
 #if defined(Q_WS_X11)
 /*!
   Special constructor for X11, ref. the documentation of
