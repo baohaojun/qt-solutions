@@ -55,6 +55,8 @@ static PProcessIdToSessionId pProcessIdToSessionId = 0;
 
 #endif
 
+#include <QDataStream>
+
 namespace QtLP_Private {
 #include "qtlockedfile.cpp"
 #if defined(Q_OS_WIN)
